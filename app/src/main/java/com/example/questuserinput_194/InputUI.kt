@@ -131,6 +131,17 @@ fun FormInputan (modifier : Modifier){
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+
+                    label = { Text("Alamat") },
+
+                    onValueChange = {
+                        textAlamat = it }
+                )
+
             }
         }
 
