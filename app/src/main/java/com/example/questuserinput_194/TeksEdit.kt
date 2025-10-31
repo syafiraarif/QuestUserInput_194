@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
-import androidx.compose.material3.Divider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -24,6 +23,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.HorizontalDivider as Divider
+
 
 @Composable
 fun FormDataDiri(modifier: Modifier){
@@ -89,7 +90,7 @@ fun FormDataDiri(modifier: Modifier){
             modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
                 id = R.dimen.padding_medium
             )),
-            thickness = dimensionResource(R.dimen.padding_tipis),
+            thickness = dimensionResource(R.dimen.divider_tipis),
             color = Color.DarkGray
         )
 
@@ -106,6 +107,14 @@ fun FormDataDiri(modifier: Modifier){
         ) {
             Text(stringResource(R.string.submit))
         }
+
+        Divider(
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
+                id = R.dimen.padding_medium
+            )),
+            thickness = dimensionResource(R.dimen.divider_tipis),
+            color = Color.DarkGray
+        )
 
     }
 }
