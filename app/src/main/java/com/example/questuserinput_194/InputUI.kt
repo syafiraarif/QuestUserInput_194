@@ -1,9 +1,13 @@
 package com.example.questuserinput_194
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -37,5 +41,14 @@ fun FormInputan (modifier : Modifier){
             .background(Color(0xFFF5F5F5))
             .padding(top = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    ) {}
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color(0xFFB39DDB))
+                .padding(vertical = 24.dp),
+            contentAlignment = Alignment.Center
+        ){}
+
+    }
 }
