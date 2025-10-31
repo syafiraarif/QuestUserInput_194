@@ -108,6 +108,26 @@ fun FormInputan (modifier : Modifier){
                 }
 
                 Spacer(modifier = Modifier.height(16.dp))
+
+                Text(text = "Status Perkawinan")
+                statusList.forEach { item ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .selectable(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            .padding(vertical = 4.dp)
+                    ) {
+                        RadioButton(
+                            selected = textStatus == item,
+                            onClick = { textStatus = item }
+                        )
+                        Text(text = item, modifier = Modifier.padding(start = 8.dp))
+                    }
+                }
             }
         }
 
