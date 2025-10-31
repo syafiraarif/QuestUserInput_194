@@ -107,7 +107,7 @@ fun FormInputan (modifier : Modifier){
                     }
                 }
 
-
+                Spacer(modifier = Modifier.height(16.dp))
             }
         }
 
