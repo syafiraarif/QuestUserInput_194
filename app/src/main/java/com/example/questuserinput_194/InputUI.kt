@@ -71,14 +71,18 @@ fun FormInputan (modifier : Modifier){
         ) {
             Column(modifier = Modifier.padding(16.dp)) {
 
-                // Nama
                 OutlinedTextField(
                     value = textNama,
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth(),
+
                     label = { Text("Nama Lengkap") },
-                    onValueChange = { textNama = it }
+
+                    onValueChange = {
+                        textNama = it }
                 )
+
+                Spacer(modifier = Modifier.height(16.dp))
             }
         }
 
