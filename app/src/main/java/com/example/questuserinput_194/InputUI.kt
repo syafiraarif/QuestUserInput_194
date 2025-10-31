@@ -21,6 +21,9 @@ fun FormInputan (modifier : Modifier){
     var status by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
 
+    val genderList = listOf("Laki-laki","Perempuan")
+    val statusList = listOf("Janda","Lajang","Duda")
+
 
 
 }
