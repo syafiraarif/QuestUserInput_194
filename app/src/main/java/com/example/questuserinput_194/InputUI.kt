@@ -48,7 +48,13 @@ fun FormInputan (modifier : Modifier){
                 .background(Color(0xFFB39DDB))
                 .padding(vertical = 24.dp),
             contentAlignment = Alignment.Center
-        ){}
+        ){
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                style = MaterialTheme.typography.titleLarge
+            )
+        }
 
     }
 }
