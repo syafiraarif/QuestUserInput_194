@@ -142,6 +142,9 @@ fun FormInputan (modifier : Modifier){
                         textAlamat = it }
                 )
 
+                Spacer(modifier = Modifier.height(24.dp))
+
+
             }
         }
 
