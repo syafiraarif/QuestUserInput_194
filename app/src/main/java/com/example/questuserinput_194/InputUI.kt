@@ -128,6 +128,9 @@ fun FormInputan (modifier : Modifier){
                         Text(text = item, modifier = Modifier.padding(start = 8.dp))
                     }
                 }
+
+                Spacer(modifier = Modifier.height(16.dp))
+
             }
         }
 
