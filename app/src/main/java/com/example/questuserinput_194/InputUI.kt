@@ -12,6 +12,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -67,7 +68,19 @@ fun FormInputan (modifier : Modifier){
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(16.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-        ) {}
+        ) {
+            Column(modifier = Modifier.padding(16.dp)) {
+
+                // Nama
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text("Nama Lengkap") },
+                    onValueChange = { textNama = it }
+                )
+            }
+        }
 
     }
 }
