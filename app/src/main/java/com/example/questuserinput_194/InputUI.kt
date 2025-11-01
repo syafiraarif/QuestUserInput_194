@@ -55,8 +55,7 @@ fun FormInputan (modifier : Modifier){
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color(0xFFB39DDB))
-                .padding(vertical = 24.dp),
+                .background(MaterialTheme.colorScheme.primary)                .padding(vertical = 24.dp),
             contentAlignment = Alignment.Center
         ){
             Text(
